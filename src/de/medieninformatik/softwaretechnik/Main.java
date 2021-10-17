@@ -15,7 +15,7 @@ public class Main extends JFrame implements ActionListener, MouseListener {
     public Main () {
         setSize(800,550);
         addMouseListener(this);
-        setTitle("Version 1.0");
+        setTitle("Version 1.0.1");
     }
 
     /**
@@ -47,8 +47,7 @@ public class Main extends JFrame implements ActionListener, MouseListener {
     public void drawCircle(int x, int y) {
         Graphics g = this.getGraphics();
         g.setColor(Color.orange);
-        g.drawOval(x-20, y-20, 40, 40);
-        g.fillOval(x-20, y-20, 40, 40);
+        g.fillRect(x-20, y-20, 40, 40);
     }
 
     /**
